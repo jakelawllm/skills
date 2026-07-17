@@ -1,6 +1,6 @@
 # Jakelaw skills
 
-[Claude Code Agent Skills](https://code.claude.com/docs/en/skills) maintained by Jakelaw for legal drafting.
+[Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) maintained by Jakelaw for legal drafting.
 
 ## Skills
 
@@ -18,9 +18,11 @@ It carries a Supreme Court of NSW Practice Note SC Gen 23 guardrail: it is for p
 
 ## Installation
 
-A skill loads from a `SKILL.md` inside a named directory. Install `human-legal-voice` either for your own use across every project, or inside one project so it is shared with your team through that project's git.
+`human-legal-voice` is an Agent Skill: a `SKILL.md` inside a folder named for the skill. Claude Code loads it from the filesystem; the Claude desktop app and claude.ai take it as a ZIP upload.
 
-### Personal (available in all your projects)
+### Claude Code
+
+Install for your own use across every project:
 
 ```bash
 git clone https://github.com/jakelawllm/skills.git
@@ -28,7 +30,7 @@ mkdir -p ~/.claude/skills
 cp -r skills/human-legal-voice ~/.claude/skills/
 ```
 
-### One project (shared with the team through that repo)
+Or install into one project, shared with the team through that project's git:
 
 ```bash
 git clone https://github.com/jakelawllm/skills.git
@@ -43,9 +45,30 @@ ls ~/.claude/skills/*/SKILL.md        # personal
 ls .claude/skills/*/SKILL.md          # project
 ```
 
+### Claude desktop app and claude.ai
+
+Custom skills are available on the Free, Pro, Max, Team, and Enterprise plans. First enable code execution, then upload the skill as a ZIP.
+
+1. Turn on code execution.
+   - Free, Pro, or Max: **Settings > Capabilities**, then enable **Code execution and file creation**.
+   - Team or Enterprise: **Organization settings > Skills**, then enable both **Code execution and file creation** and **Skills**.
+2. Build the ZIP. The archive must contain a `human-legal-voice/` folder with `SKILL.md` inside it (the folder name has to match the skill name):
+
+   ```bash
+   git clone https://github.com/jakelawllm/skills.git
+   cd skills
+   zip -r human-legal-voice.zip human-legal-voice
+   ```
+
+   If you would rather not use the command line, download this repo as a ZIP from GitHub, then re-zip just the `human-legal-voice` folder on its own.
+3. In Claude, go to **Customize > Skills**, click the **+** button, choose **+ Create skill**, then **Upload a skill**.
+4. Upload `human-legal-voice.zip`.
+
+Menu names reflect the current Claude interface and may shift as it updates.
+
 ## Usage
 
-Skills are model-invoked. When you ask Claude Code to draft or tighten a letter, email, advice, memo, or submission, or to strip an AI tone out of legal writing, it reads the skill's `description`, matches it to the task, and applies it. You do not need to name the skill, though you can ask for it directly ("use human-legal-voice"). The skill is self-contained and does not depend on any other skill being installed.
+Skills are model-invoked. When you ask Claude to draft or tighten a letter, email, advice, memo, or submission, or to strip an AI tone out of legal writing, it reads the skill's `description`, matches it to the task, and applies it. You do not need to name the skill, though you can ask for it directly ("use human-legal-voice"). The skill is self-contained and does not depend on any other skill being installed.
 
 Verification stays with you. The corpus quotes, and any citation the skill helps you draft, must be checked against the primary source before you rely on them. Under SC Gen 23 that check is a professional obligation and cannot be discharged by AI.
 
