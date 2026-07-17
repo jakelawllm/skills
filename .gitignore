@@ -1,0 +1,6 @@
+# Build artefacts
+dist/
+
+# Python caches
+__pycache__/
+*.pyc
