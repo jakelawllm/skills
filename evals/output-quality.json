@@ -1,0 +1,344 @@
+[
+  {
+    "id": "formal-output-001",
+    "skill": "formal-legal-voice",
+    "task": "Draft a letter to the other side's solicitor using only the source facts, rejecting the alleged oral extension and making the required request.",
+    "source_facts": [
+      "The written agreement between Halloway Timber Pty Ltd and Bristone Construction Pty Ltd, clause 14, required any variation to be in writing and signed by both parties.",
+      "Bristone Construction's solicitor asserts that the completion date was orally extended to 30 April 2026 during a phone call on 3 March 2026.",
+      "No written variation recording that alleged extension has been produced by either party.",
+      "The contract's original completion date is 31 March 2026.",
+      "Halloway Timber requires the written variation, if one exists, to be produced by 4pm on 24 July 2026."
+    ],
+    "rubric": {
+      "no_invented_facts": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "formal correspondence",
+      "concrete_request": true,
+      "preserves_qualification": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "formal-output-002",
+    "skill": "formal-legal-voice",
+    "task": "Draft the submissions paragraph applying the three elements of unconscionable conduct under section 21 of the Australian Consumer Law to the supplied facts.",
+    "source_facts": [
+      "Section 21 of the Australian Consumer Law prohibits a person, in trade or commerce, from engaging in conduct that is unconscionable, having regard to all the circumstances.",
+      "The parties agree the elements to be established are: a special disadvantage of the weaker party, the stronger party's knowledge of that disadvantage, and unconscientious exploitation of that disadvantage.",
+      "Our client, Mr Petrov, has a documented intellectual disability recorded in a treating specialist's letter dated 2 February 2026.",
+      "The finance broker, Ace Lending Solutions, was informed of Mr Petrov's disability before the loan was arranged, in an email dated 9 February 2026.",
+      "Ace Lending Solutions charged Mr Petrov an establishment fee of $18,500 on a loan principal of $40,000, more than four times its advertised standard fee."
+    ],
+    "rubric": {
+      "no_invented_facts": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "written submissions",
+      "applies_all_three_elements": true,
+      "links_fact_to_element": true,
+      "states_conclusion": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "formal-output-003",
+    "skill": "formal-legal-voice",
+    "task": "Draft a letter to the other side quoting clause 9.2 of the supplied lease exactly, in support of our client's position that the rent review has not been triggered.",
+    "source_facts": [
+      "Clause 9.2 of the lease between Ferrow Holdings Pty Ltd (landlord) and Little Sparrow Cafe Pty Ltd (tenant) reads: \"The rent payable under this lease shall be reviewed on each anniversary of the commencement date, but only where the tenant has given notice under clause 9.1 not less than 60 days beforehand.\"",
+      "The commencement date of the lease is 1 June 2023.",
+      "Little Sparrow Cafe Pty Ltd has never given a notice under clause 9.1.",
+      "Ferrow Holdings issued an invoice on 15 June 2026 purporting to apply a rent increase of 8 per cent."
+    ],
+    "rubric": {
+      "quotation_verbatim": true,
+      "no_invented_facts": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "formal correspondence",
+      "concrete_request": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "formal-output-004",
+    "skill": "formal-legal-voice",
+    "task": "Draft the advice paragraph addressing whether our client's conduct constitutes repudiation of the contract.",
+    "source_facts": [
+      "The contract between Windale Logistics Pty Ltd and Anchor Retail Pty Ltd required weekly deliveries every Monday.",
+      "Windale Logistics missed deliveries on 2 June, 9 June, and 16 June 2026, three consecutive weeks.",
+      "On 17 June 2026, Windale Logistics's operations manager told Anchor Retail's buyer, in writing, that Windale Logistics \"can no longer guarantee any further deliveries under the existing contract.\"",
+      "Anchor Retail terminated the contract on 18 June 2026 and has engaged an alternative supplier."
+    ],
+    "rubric": {
+      "precise_term_retained": "constitutes",
+      "no_invented_facts": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "advice",
+      "states_risk_or_counterargument": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "formal-output-005",
+    "skill": "formal-legal-voice",
+    "task": "Draft the section of the memorandum comparing the two heads of damage claimed, using a table if that is the clearest way to present the comparison.",
+    "source_facts": [
+      "Head of damage one is loss of profits, claimed at $64,000, covering the period 1 January 2026 to 30 June 2026, based on the supplied management accounts.",
+      "Head of damage two is wasted expenditure, claimed at $21,500, comprising a deposit of $15,000 paid to a subcontractor on 4 February 2026 and $6,500 in equipment hire between February and April 2026.",
+      "The defendant has admitted liability but disputes quantum on both heads.",
+      "The management accounts and the subcontractor invoice have been provided and reviewed."
+    ],
+    "rubric": {
+      "no_invented_facts": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "memorandum",
+      "uses_table_or_justifies_alternative": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "formal-output-006",
+    "skill": "formal-legal-voice",
+    "task": "Draft the submissions paragraph relying on the authority the user has supplied, without asserting that the citation has been verified.",
+    "source_facts": [
+      "The user has supplied the citation 'Halden v Corravon Pty Ltd (2019) 271 CLR 88' as authority for the proposition that a director's duty of care extends to a related body corporate.",
+      "No one on the file has checked this citation against a primary source.",
+      "The point to be supported is that our client, a director of Corravon Pty Ltd's parent company, owed the duty alleged in the statement of claim."
+    ],
+    "rubric": {
+      "no_false_verification_statement": true,
+      "preserves_supplied_citation": true,
+      "flags_verification_outstanding": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "written submissions",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "formal-output-007",
+    "skill": "formal-legal-voice",
+    "task": "Draft the concluding paragraph of the advice, using a synthesis sentence that completes the legal reasoning about our client's prospects.",
+    "source_facts": [
+      "The supply agreement between Corven Pty Ltd and Marsdale Foods Pty Ltd required 30 days' written notice to terminate.",
+      "Marsdale Foods gave only 5 days' written notice on 12 May 2026.",
+      "Corven Pty Ltd continued to supply goods for a further 25 days after the notice, without objecting to its length at the time.",
+      "Corven Pty Ltd now wishes to claim damages for the shortfall in the notice period."
+    ],
+    "rubric": {
+      "no_invented_facts": true,
+      "correct_register": "formal-legal-voice",
+      "document_function": "advice",
+      "includes_synthesis_sentence": true,
+      "states_risk_or_counterargument": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "prof-output-001",
+    "skill": "prof-legal-voice",
+    "task": "Write a routine update to our client explaining that the directions hearing has been adjourned.",
+    "source_facts": [
+      "The directions hearing listed for 22 July 2026 in the District Court has been adjourned to 9 September 2026.",
+      "The adjournment was granted by consent because the other side's expert report is not yet ready.",
+      "No action is required from the client before the new date."
+    ],
+    "rubric": {
+      "no_invented_facts": true,
+      "correct_register": "prof-legal-voice",
+      "explains_practical_effect": true,
+      "states_next_step": true,
+      "no_unsupported_reassurance": true,
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "prof-output-002",
+    "skill": "prof-legal-voice",
+    "task": "Write to our client explaining their obligations, keeping the defined term 'the Guarantee' from the loan contract rather than simplifying it away.",
+    "source_facts": [
+      "Clause 4 of the loan agreement between Redbank Finance Pty Ltd and our client defines 'the Guarantee' as the personal guarantee our client signed on 10 January 2025 securing the company's borrowings.",
+      "Redbank Finance has issued a demand under the Guarantee dated 1 July 2026 for $95,000.",
+      "Our client's company defaulted on its loan repayments from March 2026."
+    ],
+    "rubric": {
+      "defined_term_preserved": "the Guarantee",
+      "term_glossed_in_plain_words": true,
+      "no_invented_facts": true,
+      "correct_register": "prof-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "prof-output-003",
+    "skill": "prof-legal-voice",
+    "task": "Tell our client that the Tribunal has refused her application, and answer her likely question about her chances on appeal honestly.",
+    "source_facts": [
+      "The Administrative Review Tribunal refused our client's application for a disability support pension on 15 July 2026.",
+      "The Tribunal's reasons state that the medical evidence did not establish a permanent impairment of the required severity.",
+      "An appeal to the Federal Circuit and Family Court must be lodged within 28 days, that is, by 12 August 2026.",
+      "No further medical evidence has yet been obtained that would address the Tribunal's stated concern."
+    ],
+    "rubric": {
+      "states_result_plainly": true,
+      "no_unsupported_reassurance": true,
+      "no_euphemism_for_setback": true,
+      "states_deadline": true,
+      "correct_register": "prof-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "prof-output-004",
+    "skill": "prof-legal-voice",
+    "task": "Write a routine costs update to our client, who has not expressed any particular emotion about the matter, without assuming or inventing a reaction.",
+    "source_facts": [
+      "Costs incurred to date on the matter total $9,400, covering the period 1 March 2026 to 30 June 2026.",
+      "The estimate for the next stage, preparing for mediation, is a further $4,200 to $6,000.",
+      "The client has not raised any concern about costs in any prior correspondence."
+    ],
+    "rubric": {
+      "no_manufactured_emotion": true,
+      "no_invented_facts": true,
+      "separates_incurred_and_estimate": true,
+      "correct_register": "prof-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "prof-output-005",
+    "skill": "prof-legal-voice",
+    "task": "Write to our client seeking instructions on the settlement offer described below.",
+    "source_facts": [
+      "The other side has offered to settle the dispute for $45,000 inclusive of costs.",
+      "The offer was made by letter dated 14 July 2026.",
+      "The letter does not state a date by which the offer must be accepted.",
+      "Our client's claim as pleaded is for $68,000."
+    ],
+    "rubric": {
+      "asks_one_focused_question": true,
+      "does_not_invent_deadline": true,
+      "no_placeholder": true,
+      "correct_register": "prof-legal-voice",
+      "no_invented_facts": true
+    }
+  },
+  {
+    "id": "prof-output-006",
+    "skill": "prof-legal-voice",
+    "task": "Rewrite the following client email to sound warmer and less formal, without changing any fact, figure, date, or the legal position: 'We advise that our client does not accept the alleged variation and requires payment of $27,000 within 14 days, being by 31 July 2026.'",
+    "source_facts": [
+      "Our client does not accept that any variation to the contract was agreed.",
+      "Our client requires payment of $27,000.",
+      "Payment is required within 14 days, being by 31 July 2026."
+    ],
+    "rubric": {
+      "substance_unchanged": true,
+      "amount_unchanged": 27000,
+      "deadline_unchanged": "31 July 2026",
+      "tone_is_warmer": true,
+      "correct_register": "prof-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "informal-output-001",
+    "skill": "informal-legal-voice",
+    "task": "Send our long-standing client Marcus a quick, plain update that his passport copy has arrived.",
+    "source_facts": [
+      "Marcus's certified passport copy was received by our office on 16 July 2026.",
+      "We act for Marcus in his family provision claim and have acted for him for six years.",
+      "No further action is required from Marcus at this stage."
+    ],
+    "rubric": {
+      "plain_conversational_tone": true,
+      "no_invented_facts": true,
+      "no_trivialising_language": true,
+      "correct_register": "informal-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "informal-output-002",
+    "skill": "informal-legal-voice",
+    "task": "Tell our long-standing client Deb, in our usual relaxed style, that the Tribunal has refused her tenancy application, without using slang or false comfort.",
+    "source_facts": [
+      "The NSW Civil and Administrative Tribunal refused Deb's application to have the eviction order set aside, on 15 July 2026.",
+      "Deb has 28 days from 15 July 2026 to appeal to the Tribunal's Appeal Panel.",
+      "Deb must vacate the property by 1 September 2026 under the existing order."
+    ],
+    "rubric": {
+      "states_result_plainly": true,
+      "no_slang_for_adverse_result": true,
+      "no_false_comfort": true,
+      "states_deadline": true,
+      "correct_register": "informal-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "informal-output-003",
+    "skill": "informal-legal-voice",
+    "task": "Send our regular client Tom a plain-language message telling him precisely when the limitation period for his claim will commence, keeping the word 'commence' because the exact trigger date matters.",
+    "source_facts": [
+      "Tom's cause of action for breach of contract carries a six-year limitation period under the Limitation Act.",
+      "The relevant breach occurred on 1 August 2020, when the other party failed to deliver the goods.",
+      "The limitation period will commence on 1 August 2020 and expire on 1 August 2026."
+    ],
+    "rubric": {
+      "precise_term_retained": "commence",
+      "states_exact_date": true,
+      "plain_conversational_tone": true,
+      "correct_register": "informal-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "informal-output-004",
+    "skill": "informal-legal-voice",
+    "task": "Send our regular client Grace a short, warm message that her matter has settled for the full amount claimed.",
+    "source_facts": [
+      "Grace's dispute settled at mediation on 16 July 2026.",
+      "The settlement is for $22,000, the full amount Grace claimed.",
+      "Payment is due within 14 days of the signed deed, that is, by 30 July 2026."
+    ],
+    "rubric": {
+      "plain_conversational_tone": true,
+      "no_invented_facts": true,
+      "states_next_step": true,
+      "correct_register": "informal-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "informal-output-005",
+    "skill": "informal-legal-voice",
+    "task": "Send our regular client Sam an SMS-length message confirming tomorrow's call time.",
+    "source_facts": [
+      "The call with Sam is confirmed for 2pm on 18 July 2026.",
+      "The call will cover the draft settlement deed sent to Sam on 15 July 2026."
+    ],
+    "rubric": {
+      "message_is_sms_length": true,
+      "no_invented_facts": true,
+      "correct_register": "informal-legal-voice",
+      "no_placeholder": true
+    }
+  },
+  {
+    "id": "informal-output-006",
+    "skill": "informal-legal-voice",
+    "task": "Send our regular client Priya a short, plain request for a missing document.",
+    "source_facts": [
+      "Priya's bank statements for the period 1 April 2026 to 30 June 2026 are needed to complete her affidavit of financial circumstances.",
+      "Those statements have not yet been provided.",
+      "The affidavit is due to be filed by 5 August 2026."
+    ],
+    "rubric": {
+      "states_what_is_needed": true,
+      "states_deadline": true,
+      "plain_conversational_tone": true,
+      "correct_register": "informal-legal-voice",
+      "no_placeholder": true
+    }
+  }
+]
