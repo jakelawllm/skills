@@ -1,11 +1,11 @@
 ---
 name: human-legal-voice
-description: Use when drafting or editing legal work product (letters to the other side, client emails and advices, file notes, memos, chronologies, or written submissions), or when asked to remove an AI tone, make legal writing read as a specific lawyer wrote it, or calibrate prose against real appellate judgment register. Self-contained: covers surface hygiene, structure and stance, and the discipline of NSWCA and HCA judgment prose adapted for everyday drafting. Not for affidavits, witness statements, or character references, and not for producing text presented as a real court's reasons for decision; see the scope guardrail below.
+description: Use when drafting or editing legal work product (letters to the other side, client emails and advices, file notes, memos, chronologies, or written submissions), or when asked to remove an AI tone, make legal writing read as a specific lawyer wrote it. Self-contained: covers surface hygiene, structure and stance. Not for affidavits, witness statements, or character references, and not for producing text presented as a real court's reasons for decision; see the scope guardrail below.
 ---
 
 # Human legal voice
 
-This is the single writing skill for lawyers drafting everyday work product: letters to the other side, client emails, advices, file notes, memos, and written submissions. It combines the surface hygiene that stops prose reading as machine-generated, the deeper moves that make writing read as a specific person with a position, and the discipline of appellate judgment prose adapted for ordinary legal drafting. It is self-contained; nothing else needs to be loaded alongside it.
+This is the single writing skill for lawyers drafting everyday work product: letters to the other side, client emails, advices, file notes, memos, and written submissions. It combines the surface hygiene that stops prose reading as machine-generated with the deeper moves that make writing read as a specific person with a position: precise, committed, and free of AI tells, with the clarity good legal writing aims for. It is self-contained; nothing else needs to be loaded alongside it.
 
 ## SC Gen 23 scope guardrail
 
@@ -29,29 +29,27 @@ Cut scaffolding and throat-clearing. Delete "I hope this email finds you well", 
 
 Prefer verbs to abstract nouns, and agents to passives. "The implementation of the variation was refused by our client" becomes "our client refused the variation".
 
-## Borrow the discipline of judgment prose
+## Structure a letter or submission
 
-State the point in the first line. Judges open by stating the appeal's posture directly, in the very first sentence: `[1995] NSWCA 166 at [3]`: "Kirby P This is an appeal from orders of Abadee J." A letter should do the same: open with the point itself, then the detail, rather than "we refer to the above matter and have carefully considered your correspondence".
+Open with the point. State the matter or the position in the first line, rather than "we refer to the above matter and have carefully considered your correspondence".
 
-Engage the specific point in issue. Test the other side's actual contention, or the specific fact, the way a judge tests a specific finding below: `[2005] NSWCA 32 at [74]`: "Thus, in my opinion, the primary judge erred in concluding that there was insufficient correspondence between offer and acceptance."
+Engage the specific point. Answer the other side's actual contention, or the specific fact, rather than a vague characterisation of "the issues raised".
 
-Report the other side's position in controlled indirect speech. Judgments report submissions through a small closed set of verbs (submitted, contended, argued, conceded, accepted): `[2012] HCA 21 at [76]`: "South Australia submitted that Hale's proposition "was never authoritatively declared as part of the common law in Australia." It also submitted that no case had Hale's proposition as its ratio decidendi." In correspondence, the equivalent is "your client contends", "we do not accept", "it is not in dispute that".
+Report the other side's position in controlled indirect speech: "your client contends", "we do not accept", "it is not in dispute that".
 
-Make the ask concrete. Judgments state a disposition as an actual, itemised outcome, with figures and dates, the way a numbered order does: `[2005] NSWCA 32 at [106]`: "I would therefore propose the following orders: (1) Appeal allowed; (2) Set aside orders 1 and 2 made by Einstein J on 19 March 2004; (3) In lieu thereof the respondent to pay to the appellant the sum of $550,000 together with interest..." A letter borrows the same discipline of concreteness without borrowing the mechanism: state the specific step sought and the date by which it is required.
+Make the ask concrete. State the specific step sought and the date by which it is required, rather than a vague hope for resolution.
 
-Cite with discipline. "See" carries the citation at the end of the sentence it supports, rather than standing as a sentence of its own: `[1988] NSWCA 67 at [5]`: "...is not a matter which has been the subject of detailed argument and which need be pursued: see generally Greig and Davis "The Law of Contract", p 436...". A case is named for the point it stands for, in the same breath as that point, rather than cited as a bare abstract proposition: `[1996] HCA 56 at [262]`: "It was held in *Actors and Announcers Equity Association v Fontana Films Pty Ltd*, a case concerned with a provision operating to much the same effect as s 162 in its primary operation, that s 51(xx) of the Constitution authorises a law forbidding conduct engaged in for the purpose of causing loss or damage to a corporation..." Keep the zero-hit ban on "As this Court held in...", which returned no instances across the sampled judgments despite being the default move a generic model reaches for.
+Cite cleanly and sparingly. When you do cite, put "see" at the end of the sentence it supports rather than in a sentence of its own, and avoid the stock opener "As this Court held in...".
 
-## What not to carry over from judgments
-
-Do not open a letter or advice as though it were an appeal, with "this is an appeal from..." translated into correspondence. Do not write as though making orders, or as though "allowing" or "dismissing" anything; a lawyer's letter states a position and a request. Do not import concurrence or dissent framing ("I agree with the reasons of..."), since there is no other judge to agree with in a letter. Do not adopt the adjudicating first person of a judge giving reasons, weighing a primary judge's findings and then pronouncing on an appeal. A lawyer advocates for a client or advises a client; a lawyer does not decide the matter, and the writing should not sound like one who does.
+A lawyer advises or advocates but does not decide the matter; keep out of the register of a judge issuing orders or ruling on the dispute.
 
 ## Sentence craft
 
-Vary rhythm: mix short declaratives with longer sentences, and break the pattern if three sentences in a row run the same length. Judgment prose in the sampled corpus runs to a median of roughly 21 to 30 words a sentence, with about one sentence in ten running past 50 words, built from clauses stacked off a connective such as "in circumstances where...", "notwithstanding that...", or "it being common ground that...", rather than run-on coordination with "and" or "but". That figure describes judgments; it is not a target for correspondence. A letter, and especially a letter to a client, runs clearer and shorter than a judgment. Reserve the stacked, connective-led sentence for a point that is genuinely conditional or qualified, and use it sparingly.
+Vary rhythm: mix short declaratives with longer sentences, and break the pattern if three sentences in a row run the same length. Reserve a longer sentence built from clauses stacked off a connective such as "in circumstances where..." or "notwithstanding that..." for a point that is genuinely conditional or qualified, rather than reaching for it as a default rhythm. A letter, and especially a letter to a client, should run clear and short.
 
 ## Latin and terms of art
 
-Use Latin sparingly, and only where the term is doing real work rather than decorating the sentence. Even judgments use it thinly: across the sampled 38 cases, sub judice, res judicata used as a connective, sui generis, and curia advisari vult all returned zero hits, and NSWCA's use of Latin and terms of art generally declined across the sampled eras. None of the four belongs in a letter, an advice, or a submission as decoration.
+Use Latin sparingly, and only where the term is doing real work rather than decorating the sentence. Avoid reaching for sub judice, res judicata used as a connective, sui generis, or curia advisari vult as decoration; none of the four belongs in a letter, an advice, or a submission unless it is carrying real legal weight.
 
 ## Surface hygiene
 
@@ -83,7 +81,7 @@ Do not degrade your drafting to seem more human. Correct grammar, precise low-fr
 
 Before (bloated, generic register): "We refer to the above matter and have carefully considered the various points raised in your correspondence of 20 June 2026. Whilst we understand your client's position, it is our view that a resolution may be possible if all parties act reasonably and in good faith going forward. We look forward to hearing from you in due course."
 
-After (borrowing judgment discipline): "Your client contends that the deadline was extended orally on 3 March 2026. We do not accept that any extension was agreed: clause 14 of the contract required any variation to be in writing, and none was provided. Our client will treat the deadline as 31 March 2026, and asks that you provide the written variation you say exists by 4pm on 24 July 2026."
+After: "Your client contends that the deadline was extended orally on 3 March 2026. We do not accept that any extension was agreed: clause 14 of the contract required any variation to be in writing, and none was provided. Our client will treat the deadline as 31 March 2026, and asks that you provide the written variation you say exists by 4pm on 24 July 2026."
 
 The after version opens with the point, reports the other side's position in controlled indirect speech, takes a position and states the reason for it in a separate clause, engages the specific contractual term, and closes with a concrete dated request.
 
@@ -93,7 +91,7 @@ The after version opens with the point, reports the other side's position in con
 2. Is the other side's position stated in controlled indirect speech (submitted, contended, conceded, accepted), rather than a vague characterisation?
 3. Is a position actually taken, with any qualification in its own sentence rather than stacked hedges?
 4. Does the request name a concrete step and a date?
-5. Is there any judgment-only machinery: an adjudicating first-person voice, "orders", "as this Court held in...", or "I would allow/dismiss the appeal"?
+5. Has the stock opener "As this Court held in..." crept in anywhere?
 6. Does sentence length vary, or do three sentences in a row run the same length?
 7. Is there more than one em dash in the document?
 8. Is there any negative parallelism ("not just X, but Y", or the two-sentence variant)?
@@ -107,7 +105,3 @@ The after version opens with the point, reports the other side's position in con
 16. Are there any chatbot artefacts: a framing line, "I hope this helps", a mention of being an AI, or placeholder text?
 17. Is there any name, date, figure, or quote that did not come from the brief, the file, or a verified source?
 18. Is Latin used for anything other than a term genuinely doing legal work?
-
-## Reference file
-
-The verbatim judgment quotes above, the sentence-length and Latin-frequency figures, and the full methodology live in `references/nswca-hca-corpus-findings.md`. The corpus is the source of the judgment-prose qualities this skill borrows for correspondence; treat its figures as illustrative of register, not as a corpus-wide statistical claim.
