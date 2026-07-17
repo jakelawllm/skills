@@ -56,10 +56,10 @@ ls .claude/skills/*/SKILL.md          # project
 
 ### Claude desktop app and claude.ai
 
-Custom skills are available on the Free, Pro, Max, Team, and Enterprise plans. First enable code execution, then upload each skill as a ZIP.
+Custom skills are available on the Pro, Max, Team, and Enterprise plans, with code execution enabled. First enable code execution, then upload each skill as a ZIP.
 
 1. Turn on code execution.
-   - Free, Pro, or Max: **Settings > Capabilities**, then enable **Code execution and file creation**.
+   - Pro or Max: **Settings > Capabilities**, then enable **Code execution and file creation**.
    - Team or Enterprise: **Organization settings > Skills**, then enable both **Code execution and file creation** and **Skills**.
 2. Build a ZIP for each skill you want. The archive must contain the skill folder with `SKILL.md` inside it, as the root of the ZIP (the folder name has to match the skill name):
 
@@ -69,9 +69,11 @@ Custom skills are available on the Free, Pro, Max, Team, and Enterprise plans. F
    zip -r formal-legal-voice.zip formal-legal-voice
    ```
 
-   Repeat for `prof-legal-voice` and `informal-legal-voice`, or run `python scripts/package_skills.py` (see below) to build all three ZIPs at once. If you would rather not use the command line, download this repo as a ZIP from GitHub, then re-zip the folder you want on its own.
+   Repeat for `prof-legal-voice` and `informal-legal-voice`, or run `python3 scripts/package_skills.py` (see below) to build all three ZIPs at once. If you would rather not use the command line, download this repo as a ZIP from GitHub, then re-zip the folder you want on its own.
 3. In Claude, go to **Customize > Skills**, click the **+** button, choose **+ Create skill**, then **Upload a skill**.
 4. Upload the ZIP.
+
+On claude.ai each person uploads their own custom skills. There is no central admin distribution across a team or organisation, so each solicitor who wants these skills installs them on their own account.
 
 Menu names reflect the current Claude interface and may shift as it updates. Correct as at 17 July 2026: see the official Claude Help Center article, [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude), for the current menu path and plan availability rather than treating this README as the source of truth.
 
@@ -80,17 +82,19 @@ Menu names reflect the current Claude interface and may shift as it updates. Cor
 The repository builds each skill's ZIP the same way it will be distributed:
 
 ```bash
-python scripts/package_skills.py
+python3 scripts/package_skills.py
 ```
 
 This writes `dist/formal-legal-voice.zip`, `dist/prof-legal-voice.zip`, and `dist/informal-legal-voice.zip`, each with the skill folder as the ZIP root and every reference and example file the skill needs. Packaging validates the skill first, so a broken skill will not produce a ZIP.
 
+These commands assume `python3`. On Windows, use `python` or the `py` launcher instead.
+
 Before relying on a change, run:
 
 ```bash
-python scripts/sync_shared.py --check
-python scripts/validate_skills.py
-python -m unittest discover -s tests -v
+python3 scripts/sync_shared.py --check
+python3 scripts/validate_skills.py
+python3 -m unittest discover -s tests -v
 ```
 
 `sync_shared.py --check` confirms the copies of the shared references inside each skill's `references/` folder are current with the canonical files in `shared/`. `validate_skills.py` checks frontmatter, file structure, and known defects across all three skills. The unit tests cover the sync, validation, and packaging scripts themselves.
