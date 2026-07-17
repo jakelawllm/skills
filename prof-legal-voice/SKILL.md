@@ -1,108 +1,95 @@
 ---
 name: prof-legal-voice
-description: Use for client-facing legal writing: emails and letters to your own client, client updates, explaining a development or delivering news, where the writing must also tell the client how to read the news and set them at ease while staying professional and free of AI tells. This is the warmer register; for formal writing to a court or the other side, use the companion formal-legal-voice. Keep the same exclusions as the formal skill (not for affidavits, witness statements, or character references, and not for producing text presented as a real court's reasons for decision; see the scope guardrail below).
+description: Drafts and revises professional Australian client communications, including advice, matter updates, risks, costs and requests for instructions. This is the default client register.
 ---
 
 # Professional legal voice
 
-This is the client-facing register: emails and letters to your own client, client updates, explaining a development, delivering news. It keeps the surface hygiene, specificity, and stance of the companion formal-legal-voice skill, but where the formal register trusts the reader to draw their own conclusions, client writing does the opposite on purpose. It tells the client what a development means for them and sets them at ease, without sliding into empty padding. Write in professional Australian English: Australian spelling (organise, defence, favour, recognise) and Australian usage, never US spelling or idiom. It is self-contained. For formal writing to a court or the other side, use the companion formal-legal-voice.
+Drafts and revises professional Australian client communications: advice, matter updates, risk, costs, and requests for instructions. This is the default client register. Write in professional Australian English throughout: Australian spelling and usage, never US spelling or idiom. This skill is self-contained. For court, tribunal, or other-lawyer work use the companion formal-legal-voice; for an expressly informal or established-client message use informal-legal-voice.
 
-## SC Gen 23 scope guardrail
+## Scope
 
-This skill applies to permitted work product only: written submissions, correspondence, memos, chronologies, advices, and research. Never use it to generate or "humanise" the content of an affidavit, witness statement, or character reference; those must be the deponent's own words, and editing is limited to spelling and grammar. Expert report content requires prior leave of the Court, on terms the user must state before drafting proceeds. Never present a passage as the actual reasons of a real court in a real matter. Never invent a quote, outcome, or citation to make a passage sound authentic.
+This skill drafts and revises permitted work product only. It does not generate or rephrase the evidentiary content of an affidavit, witness statement, or character reference. Court-specific rules, including Practice Note SC Gen 23 for Supreme Court of New South Wales proceedings, are set out in [legal accuracy and court rules](references/legal-accuracy-and-court-rules.md). Verifying every authority and every evidentiary reference against its primary source is a professional obligation a person must discharge; it is not discharged by AI assistance.
 
-When the work is a written submission, every citation must be verified to exist, to be accurately stated (parties, year, court, pinpoint), and to be relevant to the point being made, and every reference to evidence checked the same way. That verification cannot be done by AI alone: remind the user of their independent professional obligation to confirm every authority and every evidentiary reference before the submission is filed.
+## Register router
 
-## The deepest tells are structural
+Use these rules to choose the register, in order:
 
-Editing vocabulary and punctuation alone makes text harder to detect but no more human. In the StoryScope study (61,608 stories, University of Maryland and Google DeepMind, arXiv:2604.03136), narrative structure alone separated human from AI writing at 93.2% macro-F1, and running the AI text through style-editing first left detection barely changed, at 93.9%. Fix structure and stance first, then apply the surface rules below.
+1. An express user instruction for a register controls.
+2. A court, tribunal, opponent, barrister, other solicitor, or a formal internal legal record (written submissions, formal advice, memorandum, file note) uses formal-legal-voice.
+3. An own-client communication defaults to prof-legal-voice.
+4. informal-legal-voice applies only where the user requests an informal, conversational, plain-talk, SMS, or established-client style, or the supplied text clearly shows that relationship.
+5. Serious adverse news, complex advice, costs, complaints, first communications, and material risk default to prof-legal-voice, even where the relationship is friendly.
+6. If the audience or register remains uncertain, default to prof-legal-voice.
+7. Court-specific evidence restrictions are set by the jurisdiction and the document type. They stay the same whichever register skill is selected.
 
-## Write as a specific lawyer with a position
+This skill routes court, tribunal, opponent, and other-lawyer work to formal-legal-voice, and a routine, expressly informal client message to informal-legal-voice.
 
-Be specific. Names, dates, numbers, and amounts come only from the brief, the file, or a verified source, never from imagination; if a specific is missing, ask for it rather than filling the gap with something plausible. Replace "the matter settled favourably" with "the matter settled for $180,000 in mediation on 4 March 2026".
+## Drafting workflow
 
-Take a stance. State the position, then the qualification as a separate sentence, rather than stacking hedges around a position never actually taken. Persuade the reader; do not manage the reader's expectations before you have said anything.
+### Step 1: classify the task
 
-Cut scaffolding and throat-clearing, but keep purposeful framing. Delete "I hope this email finds you well", "I am writing to", and "further to the above"; delete any sentence that restates a conclusion already stated. A sentence that tells the client how to read a development is not scaffolding: it carries information, and the next section covers how to write it.
+Work out whether the user wants a new draft, a revision, a summary, or an explanation; the document type; the audience; the objective; the requested level of formality; whether the document may be filed, served, tendered, or relied on in proceedings; and whether a court-specific rule must be checked. Ask about jurisdiction only where the answer affects evidence, expert material, filing requirements, disclosure wording, or another court-specific obligation.
 
-Prefer verbs to abstract nouns, and agents to passives. "The implementation of the variation was refused by our client" becomes "our client refused the variation".
+### Step 2: establish the source boundary
 
-## Guide the client and set them at ease
+Use only the facts, dates, amounts, names, quotations, authorities, and instructions supplied by the user or obtained from a source actually checked. Do not invent a missing fact to make the document read more smoothly. If an essential fact is missing, ask one focused question before drafting. If a non-essential fact is missing, omit it. Do not leave a placeholder such as "[date]", "[name]", "TBC", or "xx/xx/xxxx" in a final deliverable unless the user asked for a template.
 
-Say what it means, as well as what happened. After stating the development, tell the client how to read it: expected or unexpected, routine or serious, good or bad for them. "As expected, the Department has requested further information."
+### Step 3: choose the document function
 
-Address the likely worry. Name and settle the client's probable reaction where it is honest to do so. Say plainly that a step is common and standard, and that it does not indicate a problem, when that is true.
+Identify which pattern the communication follows: a routine update, adverse news, or a costs communication. Each has its own structure, set out below.
 
-Reassure only where it is true. Never manufacture comfort, downplay a real risk, or overstate prospects to make the client feel better. If the news is bad, say so plainly, then give the path forward. This is a professional-conduct line, not a matter of tone: a solicitor must not mislead their own client.
+### Step 4: draft or revise
 
-Say what happens next. Tell the client what happens next and what they must do, or that they need do nothing for now. Removing that uncertainty is itself doing work, because uncertainty is what makes a client anxious.
+For a new draft, organise the content around the document function and the reader's required action. For a revision, make the smallest change needed to meet the request and preserve legal meaning, defined terms, procedural labels, dates and amounts, quotations, citation form, admissions and denials, reservations of rights, qualifications, the user's intended level of firmness, and the user's established voice. Do not silently strengthen, soften, or change a legal position.
 
-Use plain language. Translate legal terms so the client does not need a dictionary. Keep a term of art only where the exact word matters, and gloss it in plain words.
+### Step 5: run the final audit
 
-Let warmth carry information. A sentence that tells the client how to read the news, what to expect, or that they are on track earns its place. An empty pleasantry, such as "I hope this finds you well" or "please do not hesitate to contact me", earns nothing; cut it, or replace it with a specific, useful offer, such as "if the timing is difficult, tell me and I will see what can be done".
+Check factual fidelity, legal and evidentiary source handling, register fit, document function, the practical next step, internal consistency, and Australian spelling and usage, against [style audit](references/style-audit.md). Deliver the draft without a preamble or commentary unless the user asked for an explanation, alternatives, or a change log.
 
-## Sentence craft
+## Function patterns
 
-Vary rhythm: mix short declaratives with longer sentences, and break the pattern if three sentences in a row run the same length. Keep sentences short and clear; a client letter should be easy to read aloud. Contractions are acceptable where they match the lawyer's ordinary voice and the client relationship, but keep the register professional rather than chatty. Do not import a dense, clause-stacked formal-register sentence, built off a connective such as "in circumstances where..." or "notwithstanding that...", into a client letter.
+### Routine update and development
 
-## Latin and terms of art
+Use this order where it suits the update:
 
-Use Latin sparingly, and only where the term is doing real work rather than decorating the sentence. In client writing, Latin and jargon are a bigger problem than in formal writing, so prefer plain English almost always. Avoid reaching for sub judice, res judicata used as a connective, sui generis, or curia advisari vult as decoration. If a legal term is unavoidable, gloss it in plain words the first time it appears.
+1. the answer or development;
+2. what it means for the client;
+3. the risk, uncertainty, or limitation;
+4. the available option or next step;
+5. who will do what and when; and
+6. the instructions requested, where required.
 
-## Surface hygiene
+Measured reassurance is permitted only where the facts support it. Do not assume the client's emotional reaction; acknowledge a feeling only where the user or the source material actually supports it.
 
-Regression to the mean. Do not let specific, unusual facts soften into generic, flattering description. If the brief gives a concrete detail, keep it; do not substitute a vaguer, more impressive-sounding phrase.
+### Adverse news
 
-Inflated significance and promotional language. Do not attach unearned weight to a fact or a client's position: avoid "stands as a testament", "plays a vital role", "underscores its importance", "watershed moment", "pivotal moment", and "represents a significant shift", and do not end a paragraph by telling the reader why the preceding facts matter; state the facts and stop. Write in a neutral register: do not write as though selling something. Avoid "rich history", "breathtaking", "must-visit", and "vibrant community"; tourism-register phrases have no place in legal correspondence.
+Use this order where it suits the news:
 
-Editorialising and unnamed attribution. Do not insert your own assessment of what the reader should notice: avoid "it's important to note", "it is worth mentioning", and "no discussion would be complete without". Do not attribute a claim to an unnamed authority: avoid "industry reports suggest", "some critics argue", and "it is widely regarded". If a claim needs attribution, name the source; if you have none, say so or drop the claim.
+1. the result, stated plainly;
+2. its practical effect;
+3. any immediate deadline or exposure;
+4. the realistic options; and
+5. the next contact or action.
 
-Vocabulary. These words appear at elevated frequency in generated text: delve, tapestry, underscore, pivotal, showcase, intricate, foster, garner, vibrant, nuanced, multifaceted, comprehensive, landscape (figurative), realm, crucial, moreover, furthermore, additionally, notably, specifically, ultimately, aligns, leverage, facilitate, bolster, spearhead, embark, navigate (figurative), ecosystem (outside biology), robust, seamless, harness, cornerstone, meticulous, commendable, noteworthy, groundbreaking, innovative, testament, interplay, intricacies, leveraging, devoid, captivating, fascinating, majestic. Use no more than one or two per thousand words, never clustered in one paragraph. Prefer "is" and "are" over "serves as", "represents", and "constitutes"; prefer "has" over "features", "offers", and "boasts". Prefer the plain word: "use" over "utilise", "help" over "facilitate", "start" over "commence", "show" over "demonstrate".
+Do not use a euphemism such as "minor development" for a material setback.
 
-Sentence patterns to avoid. No negative parallelism: do not write "it is not just X, it is Y", "not only X but also Y", or the two-sentence variant. Do not routinely group descriptions into three-part lists; vary the count. Do not cycle through synonyms for the same referent: if a client is called "the applicant", keep calling them "the applicant" or "she" within a paragraph, unless the different word is a genuinely distinct procedural label. Do not use a "from X to Y" construction where no real scale exists between the endpoints. Do not end a sentence with a shallow participial clause that adds no information ("ensuring...", "highlighting...", "underscoring..."); if analysis is warranted, write a separate sentence with a concrete claim.
+### Costs
 
-Transitions. Do not rely on "moreover", "furthermore", "additionally", and "in contrast" more than twice on a page. Prefer a concrete logical connective ("because", "so", "but", "although") or restructure the paragraph so no transition is needed.
+Use exact amounts and bases where supplied. Separate costs already incurred, current estimates, and possible future exposure. Explain what may change, and state clearly any decision the client needs to make. Avoid reassuring language that minimises financial risk.
 
-Formatting. Sentence-case headings, not title case. Reserve bold for defined terms or headings; never bold a phrase for emphasis inside a paragraph. Do not write a list where each item is a bolded label followed by a colon and a sentence restating the label; write list items as plain sentences. No emoji. No more than one em dash per several paragraphs; a comma, parentheses, a colon, or a full stop and new sentence usually serves better. Do not build a small table where a sentence would do. Use straight quotation marks and apostrophes, not curly ones, and do not mix the two within a document.
+## Style and voice
 
-Chatbot artefacts. Do not open with "certainly!" or "great question!", and do not close with "I hope this helps!" or "let me know if you have any questions". Do not attach a framing line before or after the deliverable ("Here is the letter:"). Do not mention being an AI, a platform, or a training-data cutoff. Do not leave placeholder text such as "[insert name here]" or "2025-xx-xx"; if information is missing, ask for it or flag the gap. Do not leave in model citation artefacts such as "citeturn0search0", "oai_citation", "contentReference[oaicite:...]", or "[web:1]", or tracking parameters such as "utm_source=openai" in a URL.
-
-## Citations and evidence
-
-Never fabricate a source, case, DOI, ISBN, URL, or author. Verify every case name, citation, and section reference against the primary source before it leaves the draft; in Mata v Avianca (SDNY, 2023) the court fined the solicitors under Rule 11 for a brief citing six invented cases, and the same risk sits behind every unverified citation in legal work. Book citations carry page numbers. Treat any citation you did not personally confirm as suspect. This is the same obligation SC Gen 23 imposes on written submissions: verification is a professional obligation, and it is not discharged by AI assistance.
-
-## What not to worry about
-
-Do not degrade your drafting to seem more human. Correct grammar, precise low-frequency vocabulary, a formal register, and standard letter conventions (salutations, valedictions) are not signs of AI writing; do not avoid a precise term because it sounds too formal. What matters is density and clustering of the patterns above; a single instance of any one of them proves nothing. Do not rely on an AI-detection tool to check your own drafting; these tools produce false positives on formal and non-native English.
-
-## Worked example
-
-Before (too austere for a client): "The Department has requested further information."
-
-After (professional, warm, honest): "As expected, the Department has requested further information about your application. This is a routine step and does not suggest a problem; most applications reach this stage. I will draft the response and send it to you to review by [date], and there is nothing you need to do in the meantime."
-
-The same honesty applies when the news is bad. Before (false comfort): "There has been a minor development that is nothing to worry about." After (honest, then constructive): "The Tribunal refused the application. This is a setback, but we have a right of appeal, and I will call you tomorrow to talk through the options and the timeline."
-
-Each after version opens with the development, tells the client how to read it, and closes with what happens next; neither one manufactures comfort that is not there.
+The rules in [style audit](references/style-audit.md) are binding on this skill, including straight quotation marks only, no negative parallelism, restrained em dashes, no rule-of-three clustering, vocabulary discipline, sentence-case headings, and no bolded inline-header colon lists. For patterns particular to this register, see [register guide](references/register-guide.md) and [examples](examples.md).
 
 ## Self-test before delivering
 
-1. Does it say what the development means for the client, rather than only what happened?
-2. Does it address the client's likely worry, where it is honest to do so?
-3. Is every reassurance true, with no false comfort, no downplaying of a real risk, and no overstated prospects?
-4. Does it say what happens next and what the client must do?
-5. Is it in plain language, with legal terms glossed?
-6. Does any warmth carry information, rather than sitting as an empty pleasantry such as "I hope this finds you well" or "please do not hesitate to contact me"?
-7. Does sentence length vary, or do three sentences in a row run the same length?
-8. Is there more than one em dash in the document?
-9. Is there any negative parallelism ("not just X, but Y", or the two-sentence variant)?
-10. Does a list use a bolded label followed by a colon and a sentence restating the label?
-11. Is any claim attributed to an unnamed authority ("industry reports suggest", "some critics argue")?
-12. Are there three or more words from the elevated-frequency vocabulary list in one paragraph?
-13. Does any sentence end with a shallow participial clause ("ensuring...", "highlighting...")?
-14. Does any passage read like promotional or tourism copy?
-15. Are there curly quotes or apostrophes anywhere in the document?
-16. Is every citation and evidence reference verified to exist, accurately stated, and relevant, with nothing invented?
-17. Are there any chatbot artefacts: a framing line, "I hope this helps", a mention of being an AI, or placeholder text?
-18. Is there any name, date, figure, or quote that did not come from the brief, the file, or a verified source?
-19. Is it in professional Australian English throughout, with no US spellings (organize, defense, favor) or US idiom?
+1. Does the update state the development and what it means for the client?
+2. Is every reassurance actually supported by the facts, with no manufactured comfort?
+3. Does adverse news state the result plainly before the options, with no euphemism such as "minor development"?
+4. Does a costs communication separate incurred costs, estimates, and future exposure, with a clear decision point?
+5. Is the next step, and who is responsible for it, stated?
+6. Is every name, date, figure, and authority drawn from the brief, the file, or a verified source?
+7. Have the style-audit hard bans been checked: straight quotes, no negative parallelism, restrained em dashes, sentence-case headings?
+8. Is it in professional Australian English throughout, with no US spelling or idiom?
+9. Is the draft free of placeholders and chatbot framing?
