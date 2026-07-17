@@ -1,11 +1,11 @@
 ---
-name: human-legal-voice
-description: Use when drafting or editing legal work product (letters to the other side, client emails and advices, file notes, memos, chronologies, or written submissions), or when asked to remove an AI tone, make legal writing read as a specific lawyer wrote it. Self-contained: covers surface hygiene, structure and stance. Not for affidavits, witness statements, or character references, and not for producing text presented as a real court's reasons for decision; see the scope guardrail below.
+name: formal-legal-voice
+description: Use for formal legal writing to a court, the other side, or another lawyer: letters, written submissions, memos, file notes, and advices where precision and directness dominate, or when removing an AI tone from that writing. This is the disciplined register; for client-facing writing that must also explain and reassure, use the companion prof-legal-voice. Not for affidavits, witness statements, or character references, and not for producing text presented as a real court's reasons for decision; see the scope guardrail below.
 ---
 
-# Human legal voice
+# Formal legal voice
 
-This is the single writing skill for lawyers drafting everyday work product: letters to the other side, client emails, advices, file notes, memos, and written submissions. It combines the surface hygiene that stops prose reading as machine-generated with the deeper moves that make writing read as a specific person with a position: precise, committed, and free of AI tells, with the clarity good legal writing aims for. It is self-contained; nothing else needs to be loaded alongside it.
+This is the disciplined-register writing skill for lawyers: letters to the court and the other side, written submissions, memos, file notes, and formal advices, where precision and economy dominate. It combines the surface hygiene that stops prose reading as machine-generated with the deeper moves that make writing read as a specific person with a position: precise, committed, and free of AI tells. Write in formal legal Australian English: Australian spelling (organise, defence, favour, recognise) and the usage of Australian legal correspondence, never US spelling or idiom. It is self-contained. For client-facing writing that must also tell the client how to read a development and set them at ease, use the companion prof-legal-voice, which keeps this same hygiene in a warmer register.
 
 ## SC Gen 23 scope guardrail
 
@@ -105,3 +105,4 @@ The after version opens with the point, reports the other side's position in con
 16. Are there any chatbot artefacts: a framing line, "I hope this helps", a mention of being an AI, or placeholder text?
 17. Is there any name, date, figure, or quote that did not come from the brief, the file, or a verified source?
 18. Is Latin used for anything other than a term genuinely doing legal work?
+19. Is it in formal legal Australian English throughout, with no US spellings (organize, defense, favor) or US idiom?
