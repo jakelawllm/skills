@@ -1,0 +1,466 @@
+[
+  {
+    "id": "trigger-flv-001",
+    "prompt": "Draft a letter to the other side's solicitor rejecting their client's claim that we agreed to an oral extension on 3 March 2026, and require them to produce the written variation by 4pm on 24 July 2026.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "The audience is another solicitor and the task is formal correspondence rejecting a contention and making a dated request.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-flv-002",
+    "prompt": "Prepare written submissions for the interlocutory application, applying the three-limb test for an interlocutory injunction to our client's facts.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Written submissions addressed to a court are core formal-legal-voice territory.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-flv-003",
+    "prompt": "Write a balanced advice memorandum to the instructing solicitor setting out the prospects of success on the breach of contract claim, including the counterarguments.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "A formal advice memorandum addressed to another lawyer within the file is a formal internal legal record, not a client communication.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-flv-004",
+    "prompt": "Draft a letter to the District Court registry requesting that the hearing listed for 5 August 2026 be relisted due to counsel's unavailability.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Correspondence to a court registry is formal-legal-voice territory.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-flv-005",
+    "prompt": "Write a memorandum reviewing whether the restraint of trade clause in the supplied employment contract is enforceable.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "A legal memorandum analysing enforceability is a formal internal record.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-plv-001",
+    "prompt": "Write to our client explaining that today's directions hearing has been adjourned to 9 September 2026 and what that means for the timetable.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "This is a routine own-client update explaining a development, the default client register.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-plv-002",
+    "prompt": "Draft an advice email to our client setting out the litigation risk in plain terms before she decides whether to proceed to hearing.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Client-facing advice explaining risk is prof-legal-voice's core function.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-plv-003",
+    "prompt": "Write to our client asking for instructions on whether to accept the other side's offer of $45,000 by 31 July 2026.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "A request for instructions to the firm's own client is a prof-legal-voice task.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-plv-004",
+    "prompt": "Explain the mediation outcome to our client honestly, including that the matter did not settle.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "An own-client update about a mixed outcome is the default client register.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-plv-005",
+    "prompt": "Write a costs update to our client separating the $12,000 already incurred from the $8,000 estimated for the next stage.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Costs communication to the firm's own client is a prof-legal-voice task by default.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-ilv-001",
+    "prompt": "Our client Ben, who we've acted for for years and always keeps things casual, just wants a quick text-style message that his passport copy has arrived, nothing formal.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "Established client, explicit request for a casual, text-style register, and a routine low-stakes update.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-ilv-002",
+    "prompt": "Send our regular client Priya a relaxed, plain-talk email letting her know her lodgement went through today.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "Explicit plain-talk request for a positive, routine update to an established client.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-ilv-003",
+    "prompt": "Text our long-time client Alex to confirm we're still on for the call tomorrow at 2pm, keep it short and casual.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "SMS-length confirmation, explicit casual tone, established client relationship.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-ilv-004",
+    "prompt": "Our client said 'no need to be all formal with me', so send him a plain reminder that we still need his bank statements for the last quarter.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "The client has expressly requested a plain, informal register for a routine document request.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "trigger-ilv-005",
+    "prompt": "Send our regular client Grace a short, warm message that her matter has settled for the full amount claimed, $22,000.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "Positive development, established client, low-stakes and suited to the informal register.",
+    "category": "positive-trigger"
+  },
+  {
+    "id": "nontrigger-flv-001",
+    "prompt": "Send our client Maria a quick, warm update that the settlement conference has moved to 14 August 2026.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "This is an ordinary own-client update; nothing about it makes it formal correspondence, even though it concerns a court date.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-flv-002",
+    "prompt": "Text our regular client Jake that his form has been lodged today.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "An established, routine, low-stakes update calls for the informal register, not formal correspondence.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-flv-003",
+    "prompt": "Write a Python script that renames every PDF in a folder using today's date.",
+    "expected_skill": null,
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "This is a software task with no legal writing content, so none of the three writing skills should activate.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-plv-001",
+    "prompt": "Draft a letter to the other side's solicitor disputing their account of the meeting on 10 May 2026.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "The audience is opposing counsel, so this is formal correspondence, not a client communication.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-plv-002",
+    "prompt": "Send a casual text to our regular client Ben confirming Thursday's call at 11am.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "Established client, routine scheduling confirmation, calls for the narrower informal register.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-plv-003",
+    "prompt": "Summarise last night's football scores for the office noticeboard.",
+    "expected_skill": null,
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Not a legal writing task, so none of the three skills should activate.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-ilv-001",
+    "prompt": "Tell our client, plainly and carefully, that the Tribunal has dismissed her application and she has 28 days to appeal.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Serious adverse news defaults to prof-legal-voice regardless of how casual the relationship otherwise is.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-ilv-002",
+    "prompt": "Draft a letter of demand to the opposing party's solicitors requiring payment of the outstanding invoice within 7 days.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "The audience is the opponent's solicitors, so formal correspondence applies.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "nontrigger-ilv-003",
+    "prompt": "This is our very first email to a brand-new client, James, confirming our retainer and the scope of the engagement.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "First communications with a client default to prof-legal-voice.",
+    "category": "non-trigger"
+  },
+  {
+    "id": "boundary-001",
+    "prompt": "Send our long-standing client Maria an update letting her know the settlement conference has been rescheduled to 14 August 2026 at 10am.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "A routine update to a long-standing client is ambiguous between prof and informal; relationship length alone does not establish the express informal register informal-legal-voice requires, so the ambiguous case defaults to prof-legal-voice under the router's precedence rules.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-002",
+    "prompt": "Tell our long-standing client Tom, plainly, that the Local Court has convicted him and fined him $2,200; he needs to know his options for appeal within 28 days.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Serious adverse news defaults to prof-legal-voice even where the relationship is friendly and long-standing.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-003",
+    "prompt": "Write the first email to a brand-new client, David, confirming we act for him and outlining the initial steps in his unfair dismissal claim.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "First communications default to prof-legal-voice regardless of the register the relationship may later develop.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-004",
+    "prompt": "Give our friendly, easy-going client Priya a costs estimate for the next stage of her matter, separating what has been incurred from what is still to come.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Costs communications default to prof-legal-voice even for a friendly, informal relationship.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-005",
+    "prompt": "Prepare a file note recording today's conference with the client and the instructions received.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "A file note is a formal internal legal record, not client-facing correspondence, so it uses formal-legal-voice's neutral record structure rather than either client register.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-006",
+    "prompt": "Draft an internal memorandum to the file analysing whether our client's guarantee is enforceable.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "An internal legal memorandum is a formal internal legal record.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-007",
+    "prompt": "Draft an affidavit for our witness, Mr Chen, setting out what he saw on the night of the incident.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Refuse/redirect case. formal-legal-voice fields litigation-document requests of this kind but must decline to generate the substantive content of the affidavit: under SC Gen 23 paragraphs 10 to 12 the evidence must be the deponent's own words and must not be generated or rephrased by Gen AI. The skill should offer permitted preparatory assistance instead, such as a topic list, chronology, or non-leading questions, and flag the required disclosure that Gen AI was not used to generate the affidavit's content.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-008",
+    "prompt": "Prepare a list of non-leading questions to put to our witness, Ms Nguyen, to help her recall the sequence of events before she prepares her statement.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Preparatory work of this kind is expressly permitted by SC Gen 23 paragraph 10, which distinguishes preparatory assistance from generating or rephrasing the witness's evidence, so this request should be accepted rather than refused.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-009",
+    "prompt": "Rewrite Dr Alam's expert report on the plaintiff's spinal injury so that it reads more persuasively.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Refuse/redirect case. formal-legal-voice fields expert-report-adjacent requests but must not draft or rephrase the substantive content of an expert report, including strengthening its persuasive force, without the user first confirming that prior leave of the court has been obtained and stating its terms (SC Gen 23 paragraphs 12 and 19 to 24). The skill may assist with preparatory administrative work only, and must preserve the expert's own opinion and reasoning.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-010",
+    "prompt": "Summarise the reasoning set out in the attached Court of Appeal judgment in Henshaw v Bellweather Pty Ltd for use in our submissions.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Summarising a supplied, genuine judgment is expressly permitted under SC Gen 23 paragraph 9B. This should be distinguished from inventing a judgment: the summary must not add any quote, holding, or outcome beyond what the supplied judgment actually contains, and any point not verifiable from the supplied text should be flagged as outstanding rather than asserted.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-011",
+    "prompt": "Write a judgment where the fictional Justice Whitfield finds entirely in our client's favour, so we can show the client what a win might look like.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Refuse/redirect case. formal-legal-voice fields judgment-related drafting requests but must decline to produce a passage presented as the reasons of a court, because the guardrail bars generating a judgment-style outcome that could be mistaken for real reasoning or persuasive authority. A compliant alternative is a clearly and unmistakably labelled hypothetical illustration, explicitly marked as fictional and never framed as a real court's reasons or as authority.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-012",
+    "prompt": "Here's my rough draft to the other side's solicitor, it's a bit chatty, can you tidy it up: 'Hey mate, your client's story about the handshake deal in March just doesn't add up, we need the paperwork by next Friday or we're moving on.'",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "The audience is another solicitor, so the formal register controls regardless of the informal tone of the supplied draft; the router's audience-based rule overrides the tone of the source text.",
+    "category": "boundary"
+  },
+  {
+    "id": "boundary-013",
+    "prompt": "Make this sound less formal: 'We advise that our client does not accept the alleged variation and requires payment within 14 days.'",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "No audience is identified for this passage, so the register remains uncertain and defaults to prof-legal-voice under the router's fallback rule. If the audience is later confirmed to be a court, tribunal, or opponent, formal-legal-voice must apply regardless of the tone requested, because a request to change tone does not change who the reader is.",
+    "category": "boundary"
+  },
+  {
+    "id": "expressinvoke-001",
+    "prompt": "Using the formal-legal-voice skill, draft a letter to the opposing solicitor rejecting their client's claim of an oral variation agreed on 3 March 2026.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Express, named invocation of formal-legal-voice for a task that matches its scope; the express request controls.",
+    "category": "express-invocation"
+  },
+  {
+    "id": "expressinvoke-002",
+    "prompt": "Please use prof-legal-voice to write to our client explaining today's directions hearing outcome.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Express, named invocation of prof-legal-voice for an ordinary own-client update; the express request controls and matches the task.",
+    "category": "express-invocation"
+  },
+  {
+    "id": "expressinvoke-003",
+    "prompt": "Apply the informal-legal-voice skill to send our regular client a quick note that the settlement money has cleared.",
+    "expected_skill": "informal-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "prof-legal-voice"
+    ],
+    "reason": "Express, named invocation of informal-legal-voice for a routine, positive update to an established client; the express request matches the task.",
+    "category": "express-invocation"
+  },
+  {
+    "id": "expressinvoke-004",
+    "prompt": "Use informal-legal-voice to tell the client the court has entered default judgment against them for $85,000.",
+    "expected_skill": "prof-legal-voice",
+    "must_not_select": [
+      "formal-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "The named invocation conflicts with a content restriction: a serious adverse outcome with material financial exposure is not suitable for informal-legal-voice regardless of the register named, because the router directs the informal skill to send serious or ambiguous client work to prof-legal-voice even when informal was expressly requested.",
+    "category": "express-invocation"
+  },
+  {
+    "id": "expressinvoke-005",
+    "prompt": "Use the formal-legal-voice skill to prepare a chronology introduction for the trial bundle.",
+    "expected_skill": "formal-legal-voice",
+    "must_not_select": [
+      "prof-legal-voice",
+      "informal-legal-voice"
+    ],
+    "reason": "Express, named invocation of formal-legal-voice for a formal litigation document; the express request matches the task.",
+    "category": "express-invocation"
+  }
+]
