@@ -11,7 +11,6 @@ Three writing skills for lawyers, one for each register. All three write in Aust
 | Court, tribunal, opponent, barrister, other solicitor, formal advice, memorandum or file note | `formal-legal-voice` |
 | Own client, ordinary advice, risks, costs, serious or complex updates | `prof-legal-voice` |
 | Established client, routine low-stakes update, expressly informal or conversational message | `informal-legal-voice` |
-| Unclear client register | `prof-legal-voice` |
 
 An express instruction from you about register normally controls. Claude will follow a request to draft something more formal or more casual unless doing so would change the facts, the legal meaning, or a court-specific obligation, in which case it will say so rather than comply silently.
 
